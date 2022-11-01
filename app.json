@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-skia",
-    "slug": "expo-skia",
+    "name": "expo-skia-demo",
+    "slug": "expo-skia-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
