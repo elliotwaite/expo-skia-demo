@@ -1,8 +1,8 @@
-import {Canvas, Circle, Group} from "@shopify/react-native-skia";
+import {Canvas, Circle, Group} from "@shopify/react-native-skia"
 
 export default function HelloWorld() {
-  const size = 256;
-  const r = size * 0.33;
+  const size = 256
+  const r = size * 0.33
   return (
     <Canvas style={{ flex: 1 }}>
       <Group blendMode="multiply">
@@ -16,5 +16,5 @@ export default function HelloWorld() {
         />
       </Group>
     </Canvas>
-  );
-};
+  )
+}

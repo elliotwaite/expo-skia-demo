@@ -1,22 +1,18 @@
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View } from 'react-native'
 import { WithSkiaWeb } from '@shopify/react-native-skia/lib/module/web'
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={{ flex: 1 }}>
       <WithSkiaWeb
-        // @ts-ignore
-        getComponent={() => import('./PathExample')}
+        opts={{
+          locateFile: (file: string) =>
+            `https://cdn.jsdelivr.net/npm/canvaskit-wasm@0.36.1/bin/full/${file}`
+        }}
+        getComponent={() => import('./src/PathExample')}
         fallback={<Text style={{ textAlign: 'center' }}>Loading Skia...</Text>}
       />
     </View>
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
-  },
-});
