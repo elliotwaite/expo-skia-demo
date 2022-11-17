@@ -1,0 +1,23 @@
+HOW THIS REPO WAS CREATED:
+
+$ yarn create expo-app  --template
+
+  ✔ Choose a template: › Blank (TypeScript)
+  ✔ What is your app named? … expo-skia-demo
+
+$ cd expo-skia-demo
+
+$ npx expo install @expo/webpack-config@^0.17.2
+
+$ expo install @shopify/react-native-skia
+$ yarn setup-skia-web
+
+Updated 'App.tsx' to be what it is now.
+Added 'HellowWorld.tsx'
+Added 'skia-web-module.d.ts'
+
+Added 'entry.js'
+Updated package.json to use `"main": "entry.js",`
+This fix was mentioned here: https://github.com/expo/expo/issues/18485#issuecomment-1311123265
+
+$ yarn web
