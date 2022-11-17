@@ -1,4 +1,4 @@
-import {Canvas, Path} from "@shopify/react-native-skia"
+import { Canvas, Path } from '@shopify/react-native-skia'
 
 export default function PathExample() {
   return (

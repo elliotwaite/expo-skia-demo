@@ -7,12 +7,11 @@ export default function App() {
       <WithSkiaWeb
         opts={{
           locateFile: (file: string) =>
-            `https://cdn.jsdelivr.net/npm/canvaskit-wasm@0.36.1/bin/full/${file}`
+            `https://cdn.jsdelivr.net/npm/canvaskit-wasm@0.36.1/bin/full/${file}`,
         }}
         getComponent={() => import('./src/PathExample')}
-        fallback={<Text style={{ textAlign: 'center' }}>Loading Skia...</Text>}
+        fallback={<Text>Loading Skia...</Text>}
       />
     </View>
   )
 }
-
