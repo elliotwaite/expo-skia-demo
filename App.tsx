@@ -6,7 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <WithSkiaWeb
         // @ts-ignore
-        getComponent={() => import('./HelloWorld')}
+        getComponent={() => import('./PathExample')}
         fallback={<Text style={{ textAlign: 'center' }}>Loading Skia...</Text>}
       />
     </View>
